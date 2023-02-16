@@ -8,9 +8,9 @@ function Profile() {
             <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css" />
             <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
 
-            <main className="profile-page">
-                <section className="relative block h-500-px">
-                    <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{
+            <main className="profile-page bg-[#DBF3FA]">
+                <section className="relative block h-500-px bg-[#DBF3FA]">
+                    <div className="absolute top-0 w-full h-full bg-center bg-cover bg-[#DBF3FA]" style={{
                         backgroundImage: "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80')"
                     }}>
                         <span id="blackOverlay" className="w-full h-full absolute opacity-50 bg-black"></span>
@@ -32,7 +32,7 @@ function Profile() {
                                 </div>
                                 <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                     <div className="py-6 px-3 mt-32 sm:mt-0">
-                                        <button className="bg-[#DBF3FA] active:bg-[#DBF3FA] uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button">
+                                        <button className="bg-sky-400 active:bg-sky-400 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button">
                                             Subscribe
                                         </button>
                                     </div>
@@ -73,17 +73,17 @@ function Profile() {
                                             warm, intimate feel with a solid groove structure. An
                                             artist of considerable range.
                                         </p>
-                                        <a href="#pablo" className="font-normal text-pink-500">Show more</a>
+                                        <a href="#pablo" className="font-normal text-sky-400">Show more</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-4">
                                 <div className="w-full px-4 mx-auto text-center">
-                                    <Tabs isFitted variant='enclosed' colorScheme='pink'>
+                                    <Tabs isFitted variant='enclosed' colorScheme='blue.500'>
                                         <TabList>
-                                            <Tab>Photos</Tab>
-                                            <Tab>Videos</Tab>
-                                            <Tab>Live</Tab>
+                                            <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Photos</Tab>
+                                            <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Videos</Tab>
+                                            <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Live</Tab>
                                         </TabList>
                                         <TabPanels>
                                             <TabPanel>
@@ -100,7 +100,17 @@ function Profile() {
                                                 </div>
                                             </TabPanel>
                                             <TabPanel>
-                                                <p>Video</p>
+                                                <div className="grid grid-cols-3 grid-flow-row gap-6">
+                                                    <img alt="..."
+                                                        src="https://www.axis.com/sites/axis/files/2021-12/video_thumb.png"
+                                                        className="shadow-xl rounded h-auto align-middle border-none" />
+                                                    <img alt="..."
+                                                        src="https://www.axis.com/sites/axis/files/2021-12/video_thumb.png"
+                                                        className="shadow-xl blur rounded h-auto align-middle border-none" />
+                                                    <img alt="..."
+                                                        src="https://www.axis.com/sites/axis/files/2021-12/video_thumb.png"
+                                                        className="shadow-xl blur rounded h-auto align-middle border-none" />
+                                                </div>
                                             </TabPanel>
                                             <TabPanel>
                                                 <p>Live</p>
