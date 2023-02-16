@@ -7,13 +7,13 @@ const Banner: FC = () => {
                 <div className="flex items-center max-w-7xl m-auto">
                     <div>
                         <h1 className="text-[#FB2576] text-7xl font-Volkhov font-bold">
-                            The Next <br></br> Onlyfans On WEB3
+                            The Next <br></br> Content Subscription Platform <br></br> On WEB3
                         </h1>
                         <p className="text-[#6D67E4] text-xl font-Poppins font-medium py-5">
-                            Introducing our newest platform for unique and one-of-a-kind NFTs!
+                            Introducing our newest platform for seeing unique contents!
                             <br /> Explore a diverse content which is made by diverse people around the world!
                             <br />
-                            all verified on the blockchain for authenticity.
+                            All verified on the blockchain for authenticity.
                         </p>
                     </div>
                 </div>
