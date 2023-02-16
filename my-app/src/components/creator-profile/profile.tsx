@@ -84,6 +84,7 @@ function Profile() {
                                             <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Photos</Tab>
                                             <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Videos</Tab>
                                             <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Live</Tab>
+                                            <Tab _selected={{ color: 'white', bg: 'blue.300' }}>Subscription Plan</Tab>
                                         </TabList>
                                         <TabPanels>
                                             <TabPanel>
@@ -106,14 +107,17 @@ function Profile() {
                                                         className="shadow-xl rounded h-auto align-middle border-none" />
                                                     <img alt="..."
                                                         src="https://www.axis.com/sites/axis/files/2021-12/video_thumb.png"
-                                                        className="shadow-xl blur rounded h-auto align-middle border-none" />
+                                                        className="shadow-xl rounded h-auto align-middle border-none" />
                                                     <img alt="..."
                                                         src="https://www.axis.com/sites/axis/files/2021-12/video_thumb.png"
-                                                        className="shadow-xl blur rounded h-auto align-middle border-none" />
+                                                        className="shadow-xl rounded h-auto align-middle border-none" />
                                                 </div>
                                             </TabPanel>
                                             <TabPanel>
                                                 <p>Live</p>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <p>Subscription Plan</p>
                                             </TabPanel>
                                         </TabPanels>
                                     </Tabs>
