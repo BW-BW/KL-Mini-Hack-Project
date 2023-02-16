@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import './App.css';
 import LandingPage from "./components/landing-page/landingpage";
+
+import Profile from "./components/creator-profile/profile";
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </div>
